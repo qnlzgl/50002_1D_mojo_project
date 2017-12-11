@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Dec 08 04:37:45 2017
+// Written by: Map P.20131013 on Mon Dec 11 18:46:27 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -146,18 +146,19 @@ TIMEGRP clk = BEL "cond_center/M_ctr_q_0" BEL "cond_center/M_ctr_q_1" BEL
         "cond6/M_ctr_q_19" BEL "cond6/sync/M_pipe_q_1" BEL
         "cond6/sync/Mshreg_M_pipe_q_1" BEL "reset_cond/M_stage_q_3" BEL
         "reset_cond/M_stage_q_2" BEL "reset_cond/M_stage_q_1" BEL
-        "reset_cond/M_stage_q_0" BEL "songandspeed/M_yellow_state_q_FSM_FFd1"
-        BEL "songandspeed/M_yellow_state_q_FSM_FFd2" BEL
+        "reset_cond/M_stage_q_0" BEL "M_global_state_q_FSM_FFd1" BEL
+        "M_global_state_q_FSM_FFd2" BEL
+        "songandspeed/M_yellow_state_q_FSM_FFd1" BEL
+        "songandspeed/M_yellow_state_q_FSM_FFd2" BEL
         "songandspeed/M_green_state_q" BEL
         "songandspeed/M_yellow_state_q_FSM_FFd1_1" BEL
         "songandspeed/M_yellow_state_q_FSM_FFd2_1" BEL
         "songandspeed/M_yellow_state_q_FSM_FFd1_2" BEL
-        "songandspeed/M_yellow_state_q_FSM_FFd2_2" BEL
         "songandspeed/M_yellow_state_q_FSM_FFd1_3" BEL
+        "songandspeed/M_yellow_state_q_FSM_FFd2_2" BEL
         "songandspeed/M_yellow_state_q_FSM_FFd2_3" BEL
-        "songandspeed/M_yellow_state_q_FSM_FFd1_4" BEL
         "songandspeed/M_yellow_state_q_FSM_FFd2_4" BEL
-        "songandspeed/M_yellow_state_q_FSM_FFd1_5" BEL
+        "songandspeed/M_yellow_state_q_FSM_FFd1_4" BEL
         "songandspeed/edge_detector1/M_last_q" BEL
         "songandspeed/edge_detector2/M_last_q" BEL
         "songandspeed/edge_detector3/M_last_q" BEL
@@ -250,76 +251,75 @@ TIMEGRP clk = BEL "cond_center/M_ctr_q_0" BEL "cond_center/M_ctr_q_1" BEL
         "songandspeed/button_cond4/M_ctr_q_0" BEL
         "songandspeed/button_cond4/sync/M_pipe_q_1" BEL
         "songandspeed/button_cond4/sync/Mshreg_M_pipe_q_1" BEL
-        "display2/counter_r/M_ctr_q_15" BEL "display2/counter_r/M_ctr_q_16"
-        BEL "display2/counter_r/M_ctr_q_17" BEL
-        "display2/counter_r/M_ctr_q_13" BEL "display2/counter_r/M_ctr_q_12"
-        BEL "display2/counter_r/M_ctr_q_14" BEL
-        "display2/counter_r/M_ctr_q_10" BEL "display2/counter_r/M_ctr_q_9" BEL
-        "display2/counter_r/M_ctr_q_11" BEL "display2/counter_r/M_ctr_q_8" BEL
-        "display2/counter_r/M_ctr_q_7" BEL "display2/counter_r/M_ctr_q_6" BEL
-        "display2/counter_r/M_ctr_q_5" BEL "display2/counter_r/M_ctr_q_3" BEL
-        "display2/counter_r/M_ctr_q_2" BEL "display2/counter_r/M_ctr_q_4" BEL
-        "display2/counter_r/M_ctr_q_1" BEL "display2/counter_r/M_ctr_q_0" BEL
-        "M_mycounter_q_0_1" BEL "M_mycounter_q_0_2" BEL "M_mycounter_q_0_3"
-        BEL "M_mycounter_q_0_4" BEL "M_mycounter_q_0_5" BEL
-        "M_mycounter_q_1_1" BEL "M_mycounter_q_1_2" BEL "M_mycounter_q_1_3"
-        BEL "M_mycounter_q_1_4" BEL "M_mycounter_q_1_5" BEL
-        "M_mycounter_q_1_6" BEL "M_mycounter_q_2_1" BEL "M_mycounter_q_2_2"
-        BEL "M_mycounter_q_2_3" BEL "M_mycounter_q_2_4" BEL
-        "M_mycounter_q_2_5" BEL "M_mycounter_q_3_1" BEL "M_mycounter_q_3_2"
-        BEL "M_mycounter_q_3_3" BEL "M_mycounter_q_3_4" BEL
-        "M_mycounter_q_3_5" BEL "M_mycounter_q_3_6" BEL "M_mycounter_q_3_7"
-        BEL "M_mycounter_q_4_1" BEL "M_mycounter_q_4_2" BEL
-        "M_mycounter_q_4_3" BEL "M_mycounter_q_4_4" BEL "M_mycounter_q_4_5"
-        BEL "M_mycounter_q_4_6" BEL "M_mycounter_q_5_1" BEL
-        "M_mycounter_q_5_2" BEL "M_mycounter_q_5_3" BEL "M_mycounter_q_5_4"
-        BEL "M_mycounter_q_5_5" BEL "M_mycounter_q_5_6" BEL
-        "detector0/M_last_q" BEL "detector1/M_last_q" BEL "detector2/M_last_q"
-        BEL "detector3/M_last_q" BEL "detector4/M_last_q" BEL
-        "detector5/M_last_q" BEL "detector6/M_last_q" BEL "M_mycounter_q_6_1"
-        BEL "M_mycounter_q_6_2" BEL "M_mycounter_q_6_3" BEL
-        "M_mycounter_q_6_4" BEL "M_mycounter_q_6_5" BEL "M_mycounter_q_6_6"
+        "display2/counter_r/M_ctr_q_17" BEL "display2/counter_r/M_ctr_q_16"
+        BEL "display2/counter_r/M_ctr_q_15" BEL
+        "display2/counter_r/M_ctr_q_14" BEL "display2/counter_r/M_ctr_q_13"
+        BEL "display2/counter_r/M_ctr_q_12" BEL
+        "display2/counter_r/M_ctr_q_11" BEL "display2/counter_r/M_ctr_q_10"
+        BEL "display2/counter_r/M_ctr_q_9" BEL "display2/counter_r/M_ctr_q_8"
+        BEL "display2/counter_r/M_ctr_q_7" BEL "display2/counter_r/M_ctr_q_6"
+        BEL "display2/counter_r/M_ctr_q_5" BEL "display2/counter_r/M_ctr_q_4"
+        BEL "display2/counter_r/M_ctr_q_3" BEL "display2/counter_r/M_ctr_q_2"
+        BEL "display2/counter_r/M_ctr_q_1" BEL "display2/counter_r/M_ctr_q_0"
+        BEL "M_mycounter_q_0_1" BEL "M_mycounter_q_0_2" BEL
+        "M_mycounter_q_0_3" BEL "M_mycounter_q_0_4" BEL "M_mycounter_q_0_5"
+        BEL "M_mycounter_q_1_1" BEL "M_mycounter_q_1_2" BEL
+        "M_mycounter_q_1_3" BEL "M_mycounter_q_1_4" BEL "M_mycounter_q_1_5"
+        BEL "M_mycounter_q_2_1" BEL "M_mycounter_q_2_2" BEL
+        "M_mycounter_q_2_3" BEL "M_mycounter_q_2_4" BEL "M_mycounter_q_2_5"
+        BEL "M_mycounter_q_2_6" BEL "M_mycounter_q_2_7" BEL
+        "M_mycounter_q_3_1" BEL "M_mycounter_q_3_2" BEL "M_mycounter_q_3_3"
+        BEL "M_mycounter_q_3_4" BEL "M_mycounter_q_3_5" BEL
+        "M_mycounter_q_3_6" BEL "M_mycounter_q_4_1" BEL "M_mycounter_q_4_2"
+        BEL "M_mycounter_q_4_3" BEL "M_mycounter_q_4_4" BEL
+        "M_mycounter_q_4_5" BEL "M_mycounter_q_4_6" BEL "M_mycounter_q_5_1"
+        BEL "M_mycounter_q_5_2" BEL "M_mycounter_q_5_3" BEL
+        "M_mycounter_q_5_4" BEL "M_mycounter_q_5_5" BEL "M_mycounter_q_5_6"
+        BEL "detector0/M_last_q" BEL "M_mycounter_q_5_7" BEL
+        "detector1/M_last_q" BEL "detector2/M_last_q" BEL "detector3/M_last_q"
+        BEL "detector4/M_last_q" BEL "detector5/M_last_q" BEL
+        "detector6/M_last_q" BEL "M_mycounter_q_6_1" BEL "M_mycounter_q_6_2"
+        BEL "M_mycounter_q_6_3" BEL "M_mycounter_q_6_4" BEL
+        "M_mycounter_q_6_5" BEL "M_mycounter_q_6_6" BEL "M_mycounter_q_6_7"
         BEL "M_mycounter_q_7_1" BEL "M_mycounter_q_7_2" BEL
         "M_mycounter_q_7_3" BEL "M_mycounter_q_7_4" BEL "M_mycounter_q_7_5"
-        BEL "M_mycounter_q_7_6" BEL "M_mycounter_q_7_7" BEL "M_gcounter_q_0"
-        BEL "M_gcounter_q_1" BEL "M_gcounter_q_2" BEL "M_gcounter_q_3" BEL
-        "M_gcounter_q_4" BEL "M_gcounter_q_5" BEL "M_gcounter_q_6" BEL
-        "M_gcounter_q_7" BEL "M_gcounter_q_8" BEL "M_gcounter_q_9" BEL
-        "M_mycounter_q_0" BEL "M_mycounter_q_1" BEL "M_mycounter_q_2" BEL
-        "M_mycounter_q_3" BEL "M_mycounter_q_4" BEL "M_gcounter_q_10" BEL
-        "M_mycounter_q_5" BEL "M_gcounter_q_11" BEL "M_mycounter_q_6" BEL
-        "M_gcounter_q_12" BEL "M_mycounter_q_7" BEL "M_gcounter_q_13" BEL
-        "M_mycounter_q_8" BEL "M_gcounter_q_14" BEL "M_mycounter_q_9" BEL
-        "M_gcounter_q_15" BEL "M_gcounter_q_20" BEL "M_gcounter_q_16" BEL
-        "M_gcounter_q_21" BEL "M_gcounter_q_17" BEL "M_gcounter_q_22" BEL
-        "M_gcounter_q_18" BEL "M_gcounter_q_23" BEL "M_gcounter_q_19" BEL
-        "detector_center/M_last_q" BEL "M_score_q_0" BEL "M_score_q_1" BEL
-        "M_score_q_2" BEL "M_score_q_3" BEL "M_score_q_4" BEL "M_score_q_5"
-        BEL "M_score_q_6" BEL "M_score_q_7" BEL "M_mycounter_q_10" BEL
-        "M_mycounter_q_11" BEL "M_mycounter_q_12" BEL "M_mycounter_q_13" BEL
-        "M_mycounter_q_14" BEL "M_mycounter_q_15" BEL "M_mycounter_q_20" BEL
-        "M_mycounter_q_16" BEL "M_mycounter_q_21" BEL "M_mycounter_q_17" BEL
-        "M_mycounter_q_22" BEL "M_mycounter_q_18" BEL "M_mycounter_q_23" BEL
-        "M_mycounter_q_19" BEL "M_mycounter_q_24" BEL "clk_BUFGP/BUFG" BEL
-        "mymusic/M_counter_octave_q_7" BEL "mymusic/M_counter_octave_q_6" BEL
-        "mymusic/M_counter_octave_q_5" BEL "mymusic/M_counter_octave_q_4" BEL
-        "mymusic/M_counter_octave_q_3" BEL "mymusic/M_counter_octave_q_2" BEL
-        "mymusic/M_counter_octave_q_1" BEL "mymusic/M_counter_octave_q_0" BEL
-        "mymusic/M_counter_note_q_8" BEL "mymusic/M_counter_note_q_7" BEL
-        "mymusic/M_counter_note_q_6" BEL "mymusic/M_counter_note_q_5" BEL
-        "mymusic/M_counter_note_q_4" BEL "mymusic/M_counter_note_q_3" BEL
-        "mymusic/M_counter_note_q_2" BEL "mymusic/M_counter_note_q_1" BEL
-        "mymusic/M_counter_note_q_0" BEL "mymusic/M_tone_q_21" BEL
-        "mymusic/M_tone_q_20" BEL "mymusic/M_tone_q_19" BEL
-        "mymusic/M_tone_q_18" BEL "mymusic/M_clkdivider_q_8" BEL
-        "mymusic/M_clkdivider_q_7" BEL "mymusic/M_clkdivider_q_6" BEL
-        "mymusic/M_clkdivider_q_5" BEL "mymusic/M_clkdivider_q_4" BEL
-        "mymusic/M_clkdivider_q_3" BEL "mymusic/M_clkdivider_q_2" BEL
-        "mymusic/M_clkdivider_q_1" BEL "mymusic/M_clkdivider_q_0" BEL
-        "mymusic/M_speaker_dff_q" BEL
+        BEL "M_gcounter_q_0" BEL "M_gcounter_q_1" BEL "M_gcounter_q_2" BEL
+        "M_gcounter_q_3" BEL "M_gcounter_q_4" BEL "M_gcounter_q_5" BEL
+        "M_gcounter_q_6" BEL "M_gcounter_q_7" BEL "M_gcounter_q_8" BEL
+        "M_gcounter_q_9" BEL "M_mycounter_q_0" BEL "M_mycounter_q_1" BEL
+        "M_mycounter_q_2" BEL "M_mycounter_q_3" BEL "M_mycounter_q_4" BEL
+        "M_gcounter_q_10" BEL "M_mycounter_q_5" BEL "M_gcounter_q_11" BEL
+        "M_mycounter_q_6" BEL "M_gcounter_q_12" BEL "M_mycounter_q_7" BEL
+        "M_gcounter_q_13" BEL "M_mycounter_q_8" BEL "M_gcounter_q_14" BEL
+        "M_mycounter_q_9" BEL "M_gcounter_q_15" BEL "M_gcounter_q_20" BEL
+        "M_gcounter_q_16" BEL "M_gcounter_q_21" BEL "M_gcounter_q_17" BEL
+        "M_gcounter_q_22" BEL "M_gcounter_q_18" BEL "M_gcounter_q_23" BEL
+        "M_gcounter_q_19" BEL "detector_center/M_last_q" BEL "M_score_q_0" BEL
+        "M_score_q_1" BEL "M_score_q_2" BEL "M_score_q_3" BEL "M_score_q_4"
+        BEL "M_score_q_5" BEL "M_score_q_6" BEL "M_score_q_7" BEL
+        "M_mycounter_q_10" BEL "M_mycounter_q_11" BEL "M_mycounter_q_12" BEL
+        "M_mycounter_q_13" BEL "M_mycounter_q_14" BEL "M_mycounter_q_15" BEL
+        "M_mycounter_q_20" BEL "M_mycounter_q_16" BEL "M_mycounter_q_21" BEL
+        "M_mycounter_q_17" BEL "M_mycounter_q_22" BEL "M_mycounter_q_18" BEL
+        "M_mycounter_q_23" BEL "M_mycounter_q_19" BEL "M_mycounter_q_24" BEL
+        "clk_BUFGP/BUFG" BEL "mymusic/M_counter_octave_q_7" BEL
+        "mymusic/M_counter_octave_q_6" BEL "mymusic/M_counter_octave_q_5" BEL
+        "mymusic/M_counter_octave_q_4" BEL "mymusic/M_counter_octave_q_3" BEL
+        "mymusic/M_counter_octave_q_2" BEL "mymusic/M_counter_octave_q_1" BEL
+        "mymusic/M_counter_octave_q_0" BEL "mymusic/M_counter_note_q_8" BEL
+        "mymusic/M_counter_note_q_7" BEL "mymusic/M_counter_note_q_6" BEL
+        "mymusic/M_counter_note_q_5" BEL "mymusic/M_counter_note_q_4" BEL
+        "mymusic/M_counter_note_q_3" BEL "mymusic/M_counter_note_q_2" BEL
+        "mymusic/M_counter_note_q_1" BEL "mymusic/M_counter_note_q_0" BEL
+        "mymusic/M_tone_q_21" BEL "mymusic/M_tone_q_20" BEL
+        "mymusic/M_tone_q_19" BEL "mymusic/M_tone_q_18" BEL
+        "mymusic/M_clkdivider_q_8" BEL "mymusic/M_clkdivider_q_7" BEL
+        "mymusic/M_clkdivider_q_6" BEL "mymusic/M_clkdivider_q_5" BEL
+        "mymusic/M_clkdivider_q_4" BEL "mymusic/M_clkdivider_q_3" BEL
+        "mymusic/M_clkdivider_q_2" BEL "mymusic/M_clkdivider_q_1" BEL
+        "mymusic/M_clkdivider_q_0" BEL "mymusic/M_speaker_dff_q" BEL
         "mymusic/get_octave_and_note/M_remainder3to2_q_0" BEL
-        "mymusic/get_octave_and_note/M_remainder3to2_q_1" BEL
-        "M_global_state_q";
+        "mymusic/get_octave_and_note/M_remainder3to2_q_1";
 TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
 SCHEMATIC END;
 

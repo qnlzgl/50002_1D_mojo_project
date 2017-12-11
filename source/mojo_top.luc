@@ -86,7 +86,7 @@ module mojo_top (
 
                             
     .rst(rst) {
-      fsm global_state(#INIT(SONG_SELECTION)) = {SONG_SELECTION, PLAY};
+      fsm global_state(#INIT(SONG_SELECTION)) = {SONG_SELECTION, PLAY, END};
       music mymusic(.music_num(music_num[1:0]), .mycounter(mycounter.q[24:0]));
       alu myalu(.a(op_a[7:0]), .b(op_b[7:0]), .alufn(opcode[5:0]));
       }
@@ -232,7 +232,7 @@ module mojo_top (
         op_b = cr[0][7:0];
         opcode = b110011;
         if(cr[0] ==b10101010) {
-          global_state.d =global_state.SONG_SELECTION;
+          global_state.d =global_state.END;
           }
         
         if(detector0.out) {     
@@ -292,9 +292,29 @@ module mojo_top (
             score.d =score.q - 1;}}}
         
         if (detector_center.out) {
-          global_state.d = global_state.SONG_SELECTION;
+          global_state.d = global_state.END;
           }     
         
+      global_state.END:
+        score.d = score.q;
+        for(j =0; j <8; j ++) {
+    
+            cr[j] =0;
+            cr2[j] =0;
+            
+            }
+            display.cr =cr;
+            r =display.r;
+            c =display.c;    
+    
+            display2.cr =cr2;
+            r2 =display2.r;
+            c2 =display2.c;
+       yellow[2:0] =b000;
+       green[1:0] =b00; 
+        if (detector6.out){
+          global_state.d = global_state.SONG_SELECTION;
+          }
 
 //default state        
       default:

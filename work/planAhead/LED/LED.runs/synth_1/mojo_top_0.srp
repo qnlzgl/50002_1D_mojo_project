@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: mojo_top_0.prj
@@ -146,51 +146,66 @@ Elaborating module <multiply_52>.
 
 Synthesizing Unit <mojo_top_0>.
     Related source file is "/home/dudu/Desktop/LED_bkup/work/planAhead/LED/LED.srcs/sources_1/imports/verilog/mojo_top_0.v".
-    Found 24-bit register for signal <M_gcounter_q>.
-    Found 25-bit register for signal <M_mycounter_q>.
-    Found 1-bit register for signal <M_global_state_q>.
     Found 8-bit register for signal <M_score_q>.
-    Found 8-bit subtractor for signal <M_score_q[7]_GND_1_o_sub_75_OUT> created at line 390.
-    Found 24-bit adder for signal <M_gcounter_q[23]_GND_1_o_add_5_OUT> created at line 303.
-    Found 25-bit adder for signal <M_mycounter_q[24]_GND_1_o_add_12_OUT> created at line 344.
-    Found 28-bit adder for signal <n0262> created at line 362.
-    Found 26-bit adder for signal <n0372[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0266> created at line 362.
-    Found 26-bit adder for signal <n0376[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0270> created at line 362.
-    Found 26-bit adder for signal <n0380[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0274> created at line 362.
-    Found 26-bit adder for signal <n0384[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0278> created at line 362.
-    Found 26-bit adder for signal <n0388[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0282> created at line 362.
-    Found 26-bit adder for signal <n0392[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0286> created at line 362.
-    Found 26-bit adder for signal <n0396[25:0]> created at line 362.
-    Found 29-bit adder for signal <n0290> created at line 362.
-    Found 8-bit adder for signal <M_score_q[7]_GND_1_o_add_86_OUT> created at line 396.
-    Found 2751-bit shifter logical right for signal <n0263> created at line 362
-    Found 2751-bit shifter logical right for signal <n0264> created at line 363
-    Found 2751-bit shifter logical right for signal <n0267> created at line 362
-    Found 2751-bit shifter logical right for signal <n0268> created at line 363
-    Found 2751-bit shifter logical right for signal <n0271> created at line 362
-    Found 2751-bit shifter logical right for signal <n0272> created at line 363
-    Found 2751-bit shifter logical right for signal <n0275> created at line 362
-    Found 2751-bit shifter logical right for signal <n0276> created at line 363
-    Found 2751-bit shifter logical right for signal <n0279> created at line 362
-    Found 2751-bit shifter logical right for signal <n0280> created at line 363
-    Found 2751-bit shifter logical right for signal <n0283> created at line 362
-    Found 2751-bit shifter logical right for signal <n0284> created at line 363
-    Found 2751-bit shifter logical right for signal <n0287> created at line 362
-    Found 2751-bit shifter logical right for signal <n0288> created at line 363
-    Found 2751-bit shifter logical right for signal <n0291> created at line 362
-    Found 2751-bit shifter logical right for signal <n0292> created at line 363
-    Found 1-bit tristate buffer for signal <spi_miso> created at line 265
-    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 265
-    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 265
-    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 265
-    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 265
-    Found 1-bit tristate buffer for signal <avr_rx> created at line 265
+    Found 25-bit register for signal <M_mycounter_q>.
+    Found 2-bit register for signal <M_global_state_q>.
+    Found 24-bit register for signal <M_gcounter_q>.
+    Found finite state machine <FSM_0> for signal <M_global_state_q>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | M_reset_cond_out (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit subtractor for signal <M_score_q[7]_GND_1_o_sub_77_OUT> created at line 391.
+    Found 24-bit adder for signal <M_gcounter_q[23]_GND_1_o_add_5_OUT> created at line 304.
+    Found 25-bit adder for signal <M_mycounter_q[24]_GND_1_o_add_13_OUT> created at line 345.
+    Found 28-bit adder for signal <n0266> created at line 363.
+    Found 26-bit adder for signal <n0380[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0270> created at line 363.
+    Found 26-bit adder for signal <n0384[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0274> created at line 363.
+    Found 26-bit adder for signal <n0388[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0278> created at line 363.
+    Found 26-bit adder for signal <n0392[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0282> created at line 363.
+    Found 26-bit adder for signal <n0396[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0286> created at line 363.
+    Found 26-bit adder for signal <n0400[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0290> created at line 363.
+    Found 26-bit adder for signal <n0404[25:0]> created at line 363.
+    Found 29-bit adder for signal <n0294> created at line 363.
+    Found 8-bit adder for signal <M_score_q[7]_GND_1_o_add_88_OUT> created at line 397.
+    Found 2751-bit shifter logical right for signal <n0267> created at line 363
+    Found 2751-bit shifter logical right for signal <n0268> created at line 364
+    Found 2751-bit shifter logical right for signal <n0271> created at line 363
+    Found 2751-bit shifter logical right for signal <n0272> created at line 364
+    Found 2751-bit shifter logical right for signal <n0275> created at line 363
+    Found 2751-bit shifter logical right for signal <n0276> created at line 364
+    Found 2751-bit shifter logical right for signal <n0279> created at line 363
+    Found 2751-bit shifter logical right for signal <n0280> created at line 364
+    Found 2751-bit shifter logical right for signal <n0283> created at line 363
+    Found 2751-bit shifter logical right for signal <n0284> created at line 364
+    Found 2751-bit shifter logical right for signal <n0287> created at line 363
+    Found 2751-bit shifter logical right for signal <n0288> created at line 364
+    Found 2751-bit shifter logical right for signal <n0291> created at line 363
+    Found 2751-bit shifter logical right for signal <n0292> created at line 364
+    Found 2751-bit shifter logical right for signal <n0295> created at line 363
+    Found 2751-bit shifter logical right for signal <n0296> created at line 364
+    Found 24-bit 3-to-1 multiplexer for signal <M_gcounter_d> created at line 316.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 266
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 266
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 266
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 266
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 266
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 266
 WARNING:Xst:737 - Found 1-bit latch for signal <op_a<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <op_a<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <op_a<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -214,11 +229,12 @@ WARNING:Xst:737 - Found 1-bit latch for signal <opcode<0>>. Latches may be gener
 WARNING:Xst:737 - Found 1-bit latch for signal <op_a<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred  19 Adder/Subtractor(s).
-	inferred  58 D-type flip-flop(s).
+	inferred  57 D-type flip-flop(s).
 	inferred  21 Latch(s).
-	inferred 353 Multiplexer(s).
+	inferred 356 Multiplexer(s).
 	inferred  16 Combinational logic shifter(s).
 	inferred   6 Tristate(s).
+	inferred   1 Finite State Machine(s).
 Unit <mojo_top_0> synthesized.
 
 Synthesizing Unit <songselection_1>.
@@ -259,17 +275,18 @@ Synthesizing Unit <counter_26>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
 Unit <counter_26> synthesized.
 
 Synthesizing Unit <selsong_4>.
     Related source file is "/home/dudu/Desktop/LED_bkup/work/planAhead/LED/LED.srcs/sources_1/imports/verilog/selsong_4.v".
     Found 1-bit register for signal <M_green_state_q>.
     Found 2-bit register for signal <M_yellow_state_q>.
-    Found finite state machine <FSM_0> for signal <M_yellow_state_q>.
+    Found finite state machine <FSM_1> for signal <M_yellow_state_q>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
-    | Transitions        | 9                                              |
-    | Inputs             | 3                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
     | Outputs            | 3                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | rst (positive)                                 |
@@ -481,8 +498,8 @@ Macro Statistics
  8-bit subtractor                                      : 2
  9-bit adder                                           : 2
  9-bit subtractor                                      : 1
-# Registers                                            : 53
- 1-bit register                                        : 16
+# Registers                                            : 52
+ 1-bit register                                        : 15
  18-bit register                                       : 2
  2-bit register                                        : 14
  20-bit register                                       : 13
@@ -505,14 +522,17 @@ Macro Statistics
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 1
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 472
+# Multiplexers                                         : 477
  1-bit 2-to-1 multiplexer                              : 150
  1-bit 4-to-1 multiplexer                              : 1
+ 18-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 2
+ 24-bit 3-to-1 multiplexer                             : 1
+ 25-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 1
  64-bit 2-to-1 multiplexer                             : 2
- 8-bit 2-to-1 multiplexer                              : 310
+ 8-bit 2-to-1 multiplexer                              : 311
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 3
  9-bit 2-to-1 multiplexer                              : 1
@@ -524,7 +544,7 @@ Macro Statistics
  8-bit shifter logical right                           : 2
 # Tristates                                            : 6
  1-bit tristate buffer                                 : 6
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 # Xors                                                 : 4
  1-bit xor2                                            : 1
  8-bit xor2                                            : 3
@@ -633,8 +653,8 @@ Macro Statistics
  31-bit up counter                                     : 1
  8-bit down counter                                    : 1
  9-bit down counter                                    : 1
-# Registers                                            : 89
- Flip-Flops                                            : 89
+# Registers                                            : 88
+ Flip-Flops                                            : 88
 # Comparators                                          : 10
  10-bit comparator lessequal                           : 1
  11-bit comparator lessequal                           : 1
@@ -646,14 +666,15 @@ Macro Statistics
  8-bit comparator greater                              : 1
  8-bit comparator lessequal                            : 1
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 470
+# Multiplexers                                         : 472
  1-bit 2-to-1 multiplexer                              : 150
  1-bit 4-to-1 multiplexer                              : 1
  2-bit 2-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 2
+ 24-bit 3-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 1
  64-bit 2-to-1 multiplexer                             : 2
- 8-bit 2-to-1 multiplexer                              : 309
+ 8-bit 2-to-1 multiplexer                              : 310
  8-bit 3-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 3
 # Logic shifters                                       : 36
@@ -662,7 +683,7 @@ Macro Statistics
  8-bit shifter arithmetic right                        : 1
  8-bit shifter logical left                            : 1
  8-bit shifter logical right                           : 2
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 # Xors                                                 : 4
  1-bit xor2                                            : 1
  8-bit xor2                                            : 3
@@ -674,7 +695,16 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <opcode_3> (without init value) has a constant value of 0 in block <mojo_top_0>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <songandspeed/FSM_0> on signal <M_yellow_state_q[1:2]> with user encoding.
+Optimizing FSM <FSM_0> on signal <M_global_state_q[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <songandspeed/FSM_1> on signal <M_yellow_state_q[1:2]> with user encoding.
 -------------------
  State | Encoding
 -------------------
@@ -750,14 +780,14 @@ Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 34.
 FlipFlop M_mycounter_q_0 has been replicated 5 time(s)
-FlipFlop M_mycounter_q_1 has been replicated 6 time(s)
-FlipFlop M_mycounter_q_2 has been replicated 5 time(s)
-FlipFlop M_mycounter_q_3 has been replicated 7 time(s)
+FlipFlop M_mycounter_q_1 has been replicated 5 time(s)
+FlipFlop M_mycounter_q_2 has been replicated 7 time(s)
+FlipFlop M_mycounter_q_3 has been replicated 6 time(s)
 FlipFlop M_mycounter_q_4 has been replicated 6 time(s)
-FlipFlop M_mycounter_q_5 has been replicated 6 time(s)
-FlipFlop M_mycounter_q_6 has been replicated 6 time(s)
-FlipFlop M_mycounter_q_7 has been replicated 7 time(s)
-FlipFlop songandspeed/M_yellow_state_q_FSM_FFd1 has been replicated 5 time(s)
+FlipFlop M_mycounter_q_5 has been replicated 7 time(s)
+FlipFlop M_mycounter_q_6 has been replicated 7 time(s)
+FlipFlop M_mycounter_q_7 has been replicated 5 time(s)
+FlipFlop songandspeed/M_yellow_state_q_FSM_FFd1 has been replicated 4 time(s)
 FlipFlop songandspeed/M_yellow_state_q_FSM_FFd2 has been replicated 4 time(s)
 
 Final Macro Processing ...
@@ -808,24 +838,24 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2393
+# BELS                             : 2396
 #      GND                         : 29
-#      INV                         : 30
-#      LUT1                        : 313
-#      LUT2                        : 44
-#      LUT3                        : 152
-#      LUT4                        : 128
-#      LUT5                        : 210
-#      LUT6                        : 710
+#      INV                         : 29
+#      LUT1                        : 289
+#      LUT2                        : 69
+#      LUT3                        : 115
+#      LUT4                        : 121
+#      LUT5                        : 255
+#      LUT6                        : 716
 #      MUXCY                       : 353
-#      MUXF7                       : 38
+#      MUXF7                       : 34
 #      VCC                         : 29
 #      XORCY                       : 357
 # FlipFlops/Latches                : 457
 #      FD                          : 12
 #      FDE                         : 12
-#      FDR                         : 74
-#      FDRE                        : 330
+#      FDR                         : 75
+#      FDRE                        : 329
 #      FDS                         : 9
 #      LD                          : 20
 # Shift Registers                  : 12
@@ -848,17 +878,17 @@ Selected Device : 6slx9tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             457  out of  11440     3%  
- Number of Slice LUTs:                 1599  out of   5720    27%  
-    Number used as Logic:              1587  out of   5720    27%  
+ Number of Slice LUTs:                 1606  out of   5720    28%  
+    Number used as Logic:              1594  out of   5720    27%  
     Number used as Memory:               12  out of   1440     0%  
        Number used as SRL:               12
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1746
-   Number with an unused Flip Flop:    1289  out of   1746    73%  
-   Number with an unused LUT:           147  out of   1746     8%  
-   Number of fully used LUT-FF pairs:   310  out of   1746    17%  
-   Number of unique control sets:        48
+ Number of LUT Flip Flop pairs used:   1765
+   Number with an unused Flip Flop:    1308  out of   1765    74%  
+   Number with an unused LUT:           159  out of   1765     9%  
+   Number of fully used LUT-FF pairs:   298  out of   1765    16%  
+   Number of unique control sets:        47
 
 IO Utilization: 
  Number of IOs:                          82
@@ -889,8 +919,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
+M_global_state_q_FSM_FFd2          | BUFG                   | 20    |
 clk                                | BUFGP                  | 449   |
-M_global_state_q                   | BUFG                   | 20    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -901,9 +931,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 11.941ns (Maximum Frequency: 83.745MHz)
+   Minimum period: 12.034ns (Maximum Frequency: 83.098MHz)
    Minimum input arrival time before clock: 3.526ns
-   Maximum output required time after clock: 15.456ns
+   Maximum output required time after clock: 16.057ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -912,34 +942,34 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 11.941ns (frequency: 83.745MHz)
-  Total number of paths / destination ports: 232014 / 1175
+  Clock period: 12.034ns (frequency: 83.098MHz)
+  Total number of paths / destination ports: 204742 / 1174
 -------------------------------------------------------------------------
-Delay:               11.941ns (Levels of Logic = 10)
-  Source:            M_mycounter_q_4_1 (FF)
+Delay:               12.034ns (Levels of Logic = 10)
+  Source:            M_mycounter_q_2_2 (FF)
   Destination:       M_score_q_2 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: M_mycounter_q_4_1 to M_score_q_2
+  Data Path: M_mycounter_q_2_2 to M_score_q_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             6   0.525   1.331  M_mycounter_q_4_1 (M_mycounter_q_4_1)
-     LUT6:I0->O            1   0.254   0.682  Sh4818812 (Sh4818812)
-     LUT6:I5->O            1   0.254   0.682  Sh4818816_SW1 (N110)
-     LUT6:I5->O            2   0.254   0.834  Sh4818816 (Sh4818816)
-     LUT6:I4->O            6   0.250   0.984  Sh481882_SW0 (N163)
-     LUT6:I4->O            1   0.250   0.790  M_mysong_song11[1375]_M_mysong_song11[1375]_OR_1935_o_SW0 (N8)
-     LUT6:I4->O           15   0.250   1.155  M_mysong_song11[1375]_M_mysong_song11[1375]_OR_1935_o (M_mysong_song11[1375]_M_mysong_song11[1375]_OR_1935_o)
-     LUT6:I5->O            3   0.254   0.766  Mmux_M_score_q[7]_M_score_q[7]_mux_139_OUT3233_SW0 (N134)
-     LUT6:I5->O            1   0.254   0.790  Mmux_M_score_q[7]_M_score_q[7]_mux_139_OUT3231_SW0 (N289)
-     LUT6:I4->O            4   0.250   0.804  Mmux_M_score_q[7]_M_score_q[7]_mux_139_OUT3234 (Mmux_M_score_q[7]_M_score_q[7]_mux_139_OUT122)
-     LUT6:I5->O            1   0.254   0.000  Mmux_M_score_q[7]_M_score_q[7]_mux_139_OUT126 (M_score_q[7]_M_score_q[7]_mux_139_OUT<2>)
+     FDRE:C->Q            12   0.525   1.499  M_mycounter_q_2_2 (M_mycounter_q_2_2)
+     LUT5:I0->O            4   0.254   0.804  Mmux_M_display_cr311111 (Mmux_M_display_cr31111)
+     LUT5:I4->O            4   0.254   1.259  Sh64694110 (Sh64694110)
+     LUT6:I0->O            1   0.254   0.000  Sh64694115_SW3_G (N521)
+     MUXF7:I1->O           1   0.175   0.682  Sh64694115_SW3 (N261)
+     LUT6:I5->O           16   0.254   1.182  Sh64695 (Sh64695)
+     LUT6:I5->O           15   0.254   1.155  M_mysong_song11[1375]_M_mysong_song11[1375]_OR_1935_o (M_mysong_song11[1375]_M_mysong_song11[1375]_OR_1935_o)
+     LUT6:I5->O            1   0.254   0.682  Mmux__n0631372_SW0 (N92)
+     LUT6:I5->O            3   0.254   0.766  Mmux__n0631372 (Mmux__n0631372)
+     LUT6:I5->O            5   0.254   0.949  Mmux__n0631151 (Mmux__n0631151)
+     LUT6:I4->O            1   0.250   0.000  Mmux__n0631157 (_n0631<2>)
      FDRE:D                    0.074          M_score_q_2
     ----------------------------------------
-    Total                     11.941ns (3.123ns logic, 8.818ns route)
-                                       (26.2% logic, 73.8% route)
+    Total                     12.034ns (3.056ns logic, 8.978ns route)
+                                       (25.4% logic, 74.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -964,65 +994,66 @@ Offset:              3.526ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 7110 / 52
+  Total number of paths / destination ports: 6949 / 52
 -------------------------------------------------------------------------
-Offset:              15.456ns (Levels of Logic = 10)
-  Source:            M_mycounter_q_2 (FF)
+Offset:              16.057ns (Levels of Logic = 11)
+  Source:            M_mycounter_q_5 (FF)
   Destination:       c<7> (PAD)
   Source Clock:      clk rising
 
-  Data Path: M_mycounter_q_2 to c<7>
+  Data Path: M_mycounter_q_5 to c<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q           205   0.525   2.646  M_mycounter_q_2 (M_mycounter_q_2)
-     LUT3:I0->O            2   0.235   0.726  Madd_n0396[25:0]_Madd_xor<6>111 (Madd_n0396[25:0]_Madd_xor<6>11)
-     LUT5:I4->O           15   0.254   1.383  Madd_n0396[25:0]_Madd_xor<6>11 (n0396[25:0]<6>)
-     LUT5:I2->O            1   0.235   0.682  Mmux_M_display_cr547 (Mmux_M_display_cr546)
-     LUT6:I5->O            1   0.254   1.112  Mmux_M_display_cr549 (Mmux_M_display_cr548)
-     LUT6:I1->O            1   0.254   0.958  Mmux_M_display_cr5410 (Mmux_M_display_cr549)
-     LUT5:I1->O            2   0.254   0.726  Mmux_M_display_cr5411 (M_display_cr<58>)
+     FDRE:C->Q           212   0.525   2.648  M_mycounter_q_5 (M_mycounter_q_5)
+     LUT3:I0->O            7   0.235   1.186  Mmux_M_display2_cr594121 (Mmux_M_display2_cr59412)
+     LUT5:I1->O           15   0.254   1.610  Madd_n0404[25:0]_Madd_xor<6>11 (n0404[25:0]<6>)
+     LUT6:I0->O            1   0.254   0.790  Mmux_M_display_cr545 (Mmux_M_display_cr544)
+     LUT6:I4->O            1   0.250   0.910  Mmux_M_display_cr547 (Mmux_M_display_cr546)
+     LUT6:I3->O            1   0.235   0.958  Mmux_M_display_cr549 (Mmux_M_display_cr548)
+     LUT6:I2->O            2   0.254   0.726  Mmux_M_display_cr5410 (M_display_cr<58>)
      begin scope: 'display:cr<58>'
-     LUT6:I5->O            1   0.254   1.112  c<7>3 (c<7>2)
-     LUT6:I1->O            1   0.254   0.681  c<7>10 (c_7_OBUF)
+     LUT6:I5->O            1   0.254   0.958  c<7>10 (c<7>9)
+     LUT6:I2->O            1   0.254   0.000  c<7>12_F (N498)
+     MUXF7:I0->O           1   0.163   0.681  c<7>12 (c_7_OBUF)
      end scope: 'display:c<7>'
      OBUF:I->O                 2.912          c_7_OBUF (c<7>)
     ----------------------------------------
-    Total                     15.456ns (5.431ns logic, 10.025ns route)
-                                       (35.1% logic, 64.9% route)
+    Total                     16.057ns (5.590ns logic, 10.467ns route)
+                                       (34.8% logic, 65.2% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock M_global_state_q
+Clock to Setup on destination clock M_global_state_q_FSM_FFd2
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |   10.563|         |
+clk            |         |         |   10.828|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
-----------------+---------+---------+---------+---------+
-                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------+---------+---------+---------+---------+
-M_global_state_q|         |   37.032|         |         |
-clk             |   11.941|         |         |         |
-----------------+---------+---------+---------+---------+
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+M_global_state_q_FSM_FFd2|         |   38.086|         |         |
+clk                      |   12.034|         |         |         |
+-------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 129.00 secs
-Total CPU time to Xst completion: 113.38 secs
+Total REAL time to Xst completion: 150.00 secs
+Total CPU time to Xst completion: 136.49 secs
  
 --> 
 
 
-Total memory usage is 1336284 kilobytes
+Total memory usage is 1336676 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   41 (   0 filtered)
